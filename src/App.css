@@ -1,11 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap");
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Nunito", sans-serif;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url("https://source.unsplash.com/1600x900/?nature");
+  background-image: url("https://source.unsplash.com/1600x900/?evening-nature");
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.container {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  max-width: 35rem;
+}
+
+.app-time {
+  font-size: 6.5rem;
+  font-weight: 800;
+}
+
+.app-greeting {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.app-text {
+  font-size: 2rem;
+}
+
+.app-input {
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.app-focus-text {
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.app-quote {
+  font-size: 1.2rem;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.app-weather {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.app-todo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
