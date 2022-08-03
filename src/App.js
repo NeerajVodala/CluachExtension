@@ -1,6 +1,5 @@
 import "./App.css";
-import { Quote, Weather } from "./components";
-import { Main } from "./pages/Main";
+import { Main, Quote, Weather } from "./components";
 
 function App() {
   return (
