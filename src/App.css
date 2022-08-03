@@ -5,6 +5,8 @@ body {
   padding: 0;
   font-family: "Nunito", sans-serif;
   background-image: url("https://source.unsplash.com/1600x900/?evening-nature");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .app {
@@ -75,11 +77,5 @@ body {
 .app-weather {
   position: absolute;
   top: 1rem;
-  right: 1rem;
-}
-
-.app-todo {
-  position: absolute;
-  bottom: 1rem;
   right: 1rem;
 }
