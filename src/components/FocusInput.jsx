@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useExtension } from "../contexts/extension-context";
 
 export const FocusInput = () => {
-  const [username, setUsername] = useState("");
+  const { usertask, setUsertask } = useExtension();
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("yes");
+    localStorage.setItem("usertask", usertask);
   };
 
   return (
@@ -12,8 +12,8 @@ export const FocusInput = () => {
       <span className="app-text">What is your main focus for today?</span>
       <input
         className="app-input"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        value={usertask}
+        onChange={(e) => setUsertask(e.target.value)}
         required
       />
     </form>

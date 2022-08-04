@@ -1,13 +1,15 @@
 import { FocusInput, FocusMessage, Greeting } from ".";
+import { useExtension } from "../contexts/extension-context";
 
 export const Main = () => {
+  // const usertask = useExtension();
+  const task = localStorage.getItem("usertask");
   return (
     <>
-      <main className="app-main container">
+      <section className="app-main container">
         <Greeting />
-        <FocusInput />
-        <FocusMessage />
-      </main>
+        {task ? <FocusMessage /> : <FocusInput />}
+      </section>
     </>
   );
 };
